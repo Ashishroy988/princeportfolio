@@ -394,6 +394,34 @@ export const projects = [
   },
 
 
+  {
+    title: "Instagram Wedding Reel 8",
+    type: "Social Media",
+    discipline: "Reels",
+    featured: false,
+    year: "2025",
+    result:
+      "Created visually engaging content optimized for audience retention.",
+    description:
+      "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
+    tags: ["Reels", "Instagram", "Vertical"],
+    metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
+    video: "https://res.cloudinary.com/dlzmztqj3/video/upload/v1783429860/Reel8_cng6id.mp4"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 ];
 
