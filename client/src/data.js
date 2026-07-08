@@ -192,7 +192,7 @@ export const projects = [
     type: "Wedding",
     discipline: "Wedding",
     featured: false,
-    year: "2024",
+    year: "2025",
     result:
       "Delivered a cinematic wedding experience with elegant storytelling.",
     description:
