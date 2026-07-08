@@ -294,6 +294,70 @@ return (
 
 }
 
+const parseStatValue = (value) => {
+  const match = String(value).match(/^(\d+)(.*)$/);
+
+  if (!match) {
+    return null;
+  }
+
+  return {
+    target: Number(match[1]),
+    suffix: match[2]
+  };
+};
+
+function AnimatedStat({ value, label, index }) {
+  const parsedValue = parseStatValue(value);
+  const [displayValue, setDisplayValue] = useState(parsedValue ? `0${parsedValue.suffix}` : value);
+
+  useEffect(() => {
+    const parsed = parseStatValue(value);
+
+    if (!parsed) {
+      setDisplayValue(value);
+      return undefined;
+    }
+
+    let frameId = 0;
+    setDisplayValue(`0${parsed.suffix}`);
+
+    const timeoutId = window.setTimeout(() => {
+      const duration = 3000;
+      const startedAt = performance.now();
+
+      const animate = (now) => {
+        const progress = Math.min((now - startedAt) / duration, 1);
+        const easedProgress = 1 - Math.pow(1 - progress, 3);
+        const nextValue = Math.round(parsed.target * easedProgress);
+
+        setDisplayValue(`${nextValue}${parsed.suffix}`);
+
+        if (progress < 1) {
+          frameId = requestAnimationFrame(animate);
+          return;
+        }
+
+        setDisplayValue(value);
+      };
+
+      frameId = requestAnimationFrame(animate);
+    }, 900 + index * 220);
+
+    return () => {
+      window.clearTimeout(timeoutId);
+      cancelAnimationFrame(frameId);
+    };
+  }, [index, value]);
+
+  return (
+    <div className="stat-item is-counting">
+      <strong>{displayValue}</strong>
+      <span>{label}</span>
+    </div>
+  );
+}
+
 function AdminDashboard() {
   const [token, setToken] = useState(() => localStorage.getItem("portfolioAdminToken") || "");
   const [loginForm, setLoginForm] = useState({ username: "", password: "" });
@@ -1359,7 +1423,6 @@ const featuredVideoRef = useRef(null);
 
     loadContentOverrides();
   }, []);
-
   const reelBars = useMemo(
     () => Array.from({ length: 24 }, (_, index) => 16 + ((index * 19) % 66)),
     []
@@ -1495,11 +1558,13 @@ const featuredVideoRef = useRef(null);
       </section>
 
       <section className="stats-strip" aria-label="Portfolio highlights">
-        {stats.map((item) => (
-          <div key={item.label}>
-            <strong>{item.value}</strong>
-            <span>{item.label}</span>
-          </div>
+        {stats.map((item, index) => (
+          <AnimatedStat
+            key={item.label}
+            value={item.value}
+            label={item.label}
+            index={index}
+          />
         ))}
       </section>
 
