@@ -794,6 +794,28 @@ h1 {
   color: #f9a8a8;
 }
 
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  padding: 1.3rem clamp(1rem, 5vw, 4.5rem);
+  color: #aeb2ad;
+  background: #08090b;
+  font-size: 0.92rem;
+}
+
+.site-footer p {
+  margin: 0;
+  color: #f6f1e8;
+  font-weight: 780;
+}
+
+.site-footer span {
+  text-align: right;
+}
+
 .admin-shell {
   min-height: 100vh;
   background:
@@ -1126,6 +1148,15 @@ h1 {
   .admin-header {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .site-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .site-footer span {
+    text-align: left;
   }
 
   .admin-header-actions,

@@ -1304,6 +1304,7 @@ function AdminDashboard() {
 
 function App() {
   const isAdminRoute = window.location.pathname.replace(/\/$/, "") === "/admin";
+  const currentYear = new Date().getFullYear();
   const [portfolioData, setPortfolioData] = useState({
     projects: baseProjects,
     mediaSamples: baseMediaSamples,
@@ -1775,6 +1776,11 @@ const featuredVideoRef = useRef(null);
           )}
         </form>
       </section>
+
+      <footer className="site-footer">
+        <p>&copy; {currentYear} Sonu Kumar. All rights reserved.</p>
+        <span>Wedding films, reels, photographs, and portfolio content are protected.</span>
+      </footer>
     </main>
   );
 }
