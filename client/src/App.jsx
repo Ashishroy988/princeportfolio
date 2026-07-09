@@ -186,6 +186,7 @@ function ScrollVideo({ sample, index }) {
   const videoRef = useRef(null);
 
   const [isMuted, setIsMuted] = useState(true);
+  const [isInView, setIsInView] = useState(false);
 
 
  const handleFullscreen = async () => {
@@ -201,6 +202,17 @@ function ScrollVideo({ sample, index }) {
   } catch {
     // ignore fullscreen errors
   }
+};
+
+ const playSampleVideo = () => {
+  const video = videoRef.current;
+
+  if (!video || !isInView) {
+    return;
+  }
+
+  video.muted = isMuted;
+  video.play().catch(() => {});
 };
 
 
@@ -220,10 +232,11 @@ function ScrollVideo({ sample, index }) {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          video.play().catch(() => {});
+          setIsInView(true);
           return;
         }
 
+        setIsInView(false);
         video.pause();
       },
       { threshold: 0.55 }
@@ -233,6 +246,21 @@ function ScrollVideo({ sample, index }) {
 
     return () => observer.disconnect();
   }, [sample.browserPlayable]);
+
+  useEffect(() => {
+    const video = videoRef.current;
+
+    if (!video) {
+      return;
+    }
+
+    if (!isInView) {
+      video.pause();
+      return;
+    }
+
+    playSampleVideo();
+  }, [isInView, isMuted, sample.src]);
 
   if (!sample.browserPlayable) {
     return (
@@ -261,6 +289,8 @@ return (
       playsInline
       preload="metadata"
       poster={sample.poster}
+      onLoadedMetadata={playSampleVideo}
+      onCanPlay={playSampleVideo}
     >
       <source src={sample.src} type="video/mp4" />
     </video>
@@ -355,6 +385,126 @@ function AnimatedStat({ value, label, index }) {
       <strong>{displayValue}</strong>
       <span>{label}</span>
     </div>
+  );
+}
+
+function ProjectCard({ project, isActive, onSelect }) {
+  const cardRef = useRef(null);
+  const videoRef = useRef(null);
+  const [isMuted, setIsMuted] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
+
+  const playVideo = () => {
+    const video = videoRef.current;
+
+    if (!video || !isVisible) {
+      return;
+    }
+
+    video.muted = isMuted;
+    video.play().catch(() => {});
+  };
+
+  useEffect(() => {
+    const node = cardRef.current;
+
+    if (!node || !("IntersectionObserver" in window)) {
+      setIsVisible(true);
+      return undefined;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting),
+      { rootMargin: "120px 0px", threshold: 0.35 }
+    );
+
+    observer.observe(node);
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const video = videoRef.current;
+
+    if (!video) {
+      return;
+    }
+
+    if (!isVisible) {
+      video.pause();
+      return;
+    }
+
+    playVideo();
+  }, [isMuted, isVisible, project.video]);
+
+  const toggleMute = (event) => {
+    event.stopPropagation();
+    const nextMuted = !isMuted;
+
+    setIsMuted(nextMuted);
+
+    if (!nextMuted) {
+      videoRef.current?.play().catch(() => {});
+    }
+  };
+
+  const openFullscreen = (event) => {
+    event.stopPropagation();
+    videoRef.current?.requestFullscreen?.();
+  };
+
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      onSelect();
+    }
+  };
+
+  return (
+    <article
+      ref={cardRef}
+      className={isActive ? "project-card active" : "project-card"}
+      role="button"
+      tabIndex={0}
+      onClick={onSelect}
+      onKeyDown={handleKeyDown}
+      aria-label={`Select ${project.title}`}
+    >
+      <div className="project-visual">
+        <video
+          ref={videoRef}
+          src={isVisible ? project.video : undefined}
+          muted={isMuted}
+          loop
+          playsInline
+          preload="metadata"
+          onLoadedMetadata={playVideo}
+          onCanPlay={playVideo}
+        />
+
+        <button className="mute-btn" type="button" onClick={toggleMute} aria-label={isMuted ? "Unmute video" : "Mute video"}>
+          {isMuted ? "🔇" : "🔊"}
+        </button>
+
+        <button className="fullscreen-btn" type="button" onClick={openFullscreen} aria-label="Open fullscreen">
+          <Maximize2 size={18} />
+        </button>
+
+        <span>{project.year}</span>
+      </div>
+
+      <div className="project-body">
+        <p>{project.type}</p>
+        <h3>{project.title}</h3>
+        <span>{project.result}</span>
+        <div className="tag-row">
+          {project.tags.map((tag) => (
+            <small key={tag}>{tag}</small>
+          ))}
+        </div>
+      </div>
+    </article>
   );
 }
 
@@ -1629,70 +1779,12 @@ const featuredVideoRef = useRef(null);
 
         <div className="project-grid">
           {filteredProjects.map((project, index) => (
-            <button
-              className={project.title === featuredProject.title ? "project-card active" : "project-card"}
+            <ProjectCard
               key={project.title}
-              type="button"
-              onClick={() => setFeaturedIndex(index)}
-            >
-
-              
-               <div className="project-visual">
-
-  <video
-    src={project.video}
-    autoPlay
-    muted
-    loop
-    playsInline
-  />
-
-  <button
-    className="mute-btn"
-    type="button"
-    onClick={(e) => {
-      const video =
-        e.currentTarget.parentElement.querySelector("video");
-
-      video.muted = !video.muted;
-      e.currentTarget.textContent =
-        video.muted ? "🔇" : "🔊";
-    }}
-  >
-    🔇
-  </button>
-
-  <button
-    className="fullscreen-btn"
-    type="button"
-    onClick={(e) => {
-      const video =
-        e.currentTarget.parentElement.querySelector("video");
-
-      video.requestFullscreen?.();
-    }}
-  >
-    ⛶
-  </button>
-
-  <span>{project.year}</span>
-
-</div>
-
-
-
-
-              <div className="project-body">
-                <p>{project.type}</p>
-                <h3>{project.title}</h3>
-                <span>{project.result}</span>
-                <div className="tag-row">
-                  {project.tags.map((tag) => (
-                    <small key={tag}>{tag}</small>
-                  ))}
-                </div>
-              </div>
-            </button>
+              project={project}
+              isActive={project.title === featuredProject.title}
+              onSelect={() => setFeaturedIndex(index)}
+            />
           ))}
         </div>
       </section>

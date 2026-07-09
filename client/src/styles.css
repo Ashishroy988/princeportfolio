@@ -584,8 +584,13 @@ h1 {
 }
 
 .project-card {
+  display: block;
+  width: 100%;
+  padding: 0;
   overflow: hidden;
   text-align: left;
+  color: inherit;
+  font: inherit;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   background: #101417;
@@ -595,6 +600,11 @@ h1 {
 .project-card.active {
   border-color: rgba(57, 212, 181, 0.58);
   box-shadow: 0 0 0 1px rgba(57, 212, 181, 0.16);
+}
+
+.project-card:focus-visible {
+  outline: 2px solid #39d4b5;
+  outline-offset: 3px;
 }
 
 .project-visual {
@@ -609,7 +619,6 @@ h1 {
   height: 100%;
   object-fit: cover;
 }
-
 
 .visual-1 {
   background: linear-gradient(135deg, #14302f, #2a1f15);
