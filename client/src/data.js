@@ -260,7 +260,7 @@ export const projects = [
     featured: false,
     year: "2025",
     result:
-      "Created a heartfelt teaser designed for social sharing and memorable first impressions.",
+      "Crafted elegant teaser films that celebrate every meaningful moment.",
     description:
       "A romantic short-form edit featuring cinematic transitions, music synchronization, and emotional moments.",
     tags: ["Engagement", "Teaser", "Reels"],
@@ -275,7 +275,7 @@ export const projects = [
     featured: false,
     year: "2026",
     result:
-      "Created a heartfelt teaser designed for social sharing and memorable first impressions.",
+      "Wedding teasers that transform moments into lifelong memories.",
     description:
       "A romantic short-form edit featuring cinematic transitions, music synchronization, and emotional moments.",
     tags: ["Engagement", "Teaser", "Reels"],
@@ -297,6 +297,34 @@ export const projects = [
     metrics: ["45 sec teaser", "Vertical format", "Color graded"],
     video: "https://res.cloudinary.com/s0e32cgr/video/upload/v1783601787/Eng4cloud_ypgkvh.mp4"
   },
+
+  {
+    title: "Engagement Teaser 5",
+    type: "Engagement",
+    discipline: "Engagement",
+    featured: false,
+    year: "2026",
+    result:
+      "Elegant teaser edits that blend emotion with cinematic storytelling.",
+    description:
+      "A romantic short-form edit featuring cinematic transitions, music synchronization, and emotional moments.",
+    tags: ["Engagement", "Teaser", "Reels"],
+    metrics: ["45 sec teaser", "Vertical format", "Color graded"],
+    video: "https://res.cloudinary.com/s0e32cgr/video/upload/v1783603186/Eng5cloud_sej8v8.mp4"
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
