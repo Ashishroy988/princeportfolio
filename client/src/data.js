@@ -323,12 +323,6 @@ export const projects = [
 
 
 
-
-
-
-
-
-
   //  Additional Reels video
 
     {

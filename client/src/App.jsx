@@ -1578,22 +1578,17 @@ const featuredVideoRef = useRef(null);
     []
   );
 
-  const disciplines = useMemo(
-    () => ["All", ...new Set(portfolioData.projects.map((project) => project.discipline))],
-    [portfolioData.projects]
-  );
+  const disciplines = ["All", "Engagement", "Wedding", "Reels", "Sangeet", "Haldi"];
 
   const filteredProjects = useMemo(() => {
-  if (activeDiscipline === "All") {
-    return portfolioData.projects.filter(
-      (project) => project.featured
-    );
-  }
+    if (activeDiscipline === "All") {
+      return portfolioData.projects.filter((project) => project.featured);
+    }
 
-  return portfolioData.projects.filter(
-    (project) => project.discipline === activeDiscipline
-  );
-}, [activeDiscipline, portfolioData.projects]);
+    return portfolioData.projects.filter(
+      (project) => project.discipline === activeDiscipline
+    );
+  }, [activeDiscipline, portfolioData.projects]);
 
   const featuredProject = filteredProjects[featuredIndex % filteredProjects.length] || portfolioData.projects[0];
   const {
