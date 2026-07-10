@@ -100,7 +100,7 @@ export const projects = [
       "A romantic short-form edit featuring cinematic transitions, music synchronization, and emotional moments.",
     tags: ["Engagement", "Teaser", "Reels"],
     metrics: ["45 sec teaser", "Vertical format", "Color graded"],
-    video: "https://res.cloudinary.com/s0e32cgr/video/upload/v1783601814/Eng1cloud_qlqmef.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Eng1cloud.mp4"
   },
 
   {
@@ -237,7 +237,7 @@ export const projects = [
       "A romantic short-form edit featuring cinematic transitions, music synchronization, and emotional moments.",
     tags: ["Engagement", "Teaser", "Reels"],
     metrics: ["45 sec teaser", "Vertical format", "Color graded"],
-    video: "https://res.cloudinary.com/s0e32cgr/video/upload/v1783601813/Eng3cloud_s6n8ta.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Eng3cloud.mp4"
   },
 
   {
@@ -252,7 +252,7 @@ export const projects = [
       "A romantic short-form edit featuring cinematic transitions, music synchronization, and emotional moments.",
     tags: ["Engagement", "Teaser", "Reels"],
     metrics: ["45 sec teaser", "Vertical format", "Color graded"],
-    video: "https://res.cloudinary.com/s0e32cgr/video/upload/v1783601787/Eng4cloud_ypgkvh.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Eng4cloud.mp4"
   },
 
   {
@@ -267,7 +267,7 @@ export const projects = [
       "A romantic short-form edit featuring cinematic transitions, music synchronization, and emotional moments.",
     tags: ["Engagement", "Teaser", "Reels"],
     metrics: ["45 sec teaser", "Vertical format", "Color graded"],
-    video: "https://res.cloudinary.com/s0e32cgr/video/upload/v1783603186/Eng5cloud_sej8v8.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Eng5cloud.mp4"
   },
 
 
@@ -405,7 +405,7 @@ export const mediaSamples = [
   {
     title: "Engagement Teaser & Highlights",
     category: "Vertical / Beat Sync",
-    src: "https://res.cloudinary.com/s0e32cgr/video/upload/v1783601814/Eng1cloud_qlqmef.mp4",
+    src: "https://sonuportfolio.b-cdn.net/Eng1cloud.mp4",
     poster: "",
     browserPlayable: true
   },
