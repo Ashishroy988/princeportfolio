@@ -424,6 +424,8 @@ h1 {
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 8px;
   background: #101417;
+  content-visibility: auto;
+  contain-intrinsic-size: 420px;
 }
 
 .sample-card:first-child {
@@ -595,6 +597,8 @@ h1 {
   border-radius: 8px;
   background: #101417;
   cursor: pointer;
+  content-visibility: auto;
+  contain-intrinsic-size: 430px;
 }
 
 .project-card.active {

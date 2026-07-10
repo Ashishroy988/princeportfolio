@@ -178,15 +178,16 @@ const emptyProjectForm = {
   video: ""
 };
 
-
 // ScrollVideo component with scroll-based autoplay and mute toggle
 
 
 function ScrollVideo({ sample, index }) {
+  const cardRef = useRef(null);
   const videoRef = useRef(null);
 
   const [isMuted, setIsMuted] = useState(true);
   const [isInView, setIsInView] = useState(false);
+  const [shouldLoad, setShouldLoad] = useState(false);
 
 
  const handleFullscreen = async () => {
@@ -223,11 +224,23 @@ function ScrollVideo({ sample, index }) {
       return undefined;
     }
 
-    const video = videoRef.current;
+    const card = cardRef.current;
 
-    if (!video) {
+    if (!card || !("IntersectionObserver" in window)) {
+      setShouldLoad(true);
+      setIsInView(true);
       return undefined;
     }
+
+    const loadObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShouldLoad(true);
+          loadObserver.disconnect();
+        }
+      },
+      { rootMargin: "1100px 0px", threshold: 0 }
+    );
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -237,14 +250,18 @@ function ScrollVideo({ sample, index }) {
         }
 
         setIsInView(false);
-        video.pause();
+        videoRef.current?.pause();
       },
       { threshold: 0.55 }
     );
 
-    observer.observe(video);
+    loadObserver.observe(card);
+    observer.observe(card);
 
-    return () => observer.disconnect();
+    return () => {
+      loadObserver.disconnect();
+      observer.disconnect();
+    };
   }, [sample.browserPlayable]);
 
   useEffect(() => {
@@ -261,6 +278,12 @@ function ScrollVideo({ sample, index }) {
 
     playSampleVideo();
   }, [isInView, isMuted, sample.src]);
+
+  useEffect(() => {
+    if (shouldLoad) {
+      videoRef.current?.load();
+    }
+  }, [sample.src, shouldLoad]);
 
   if (!sample.browserPlayable) {
     return (
@@ -281,18 +304,19 @@ function ScrollVideo({ sample, index }) {
 
 
 return (
-  <article className={`sample-card sample-${(index % 3) + 1}`}>
+  <article ref={cardRef} className={`sample-card sample-${(index % 3) + 1}`}>
     <video
       ref={videoRef}
       muted={isMuted}
       loop
       playsInline
-      preload="metadata"
+      preload={shouldLoad ? "auto" : "none"}
       poster={sample.poster}
       onLoadedMetadata={playSampleVideo}
+      onLoadedData={playSampleVideo}
       onCanPlay={playSampleVideo}
     >
-      <source src={sample.src} type="video/mp4" />
+      {shouldLoad && <source src={sample.src} type="video/mp4" />}
     </video>
 
     <button
@@ -393,6 +417,7 @@ function ProjectCard({ project, isActive, onSelect }) {
   const videoRef = useRef(null);
   const [isMuted, setIsMuted] = useState(true);
   const [isVisible, setIsVisible] = useState(false);
+  const [shouldLoad, setShouldLoad] = useState(false);
 
   const playVideo = () => {
     const video = videoRef.current;
@@ -409,18 +434,33 @@ function ProjectCard({ project, isActive, onSelect }) {
     const node = cardRef.current;
 
     if (!node || !("IntersectionObserver" in window)) {
+      setShouldLoad(true);
       setIsVisible(true);
       return undefined;
     }
 
-    const observer = new IntersectionObserver(
-      ([entry]) => setIsVisible(entry.isIntersecting),
-      { rootMargin: "120px 0px", threshold: 0.35 }
+    const loadObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShouldLoad(true);
+          loadObserver.disconnect();
+        }
+      },
+      { rootMargin: "1100px 0px", threshold: 0 }
     );
 
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsVisible(entry.isIntersecting),
+      { rootMargin: "120px 0px", threshold: 0.45 }
+    );
+
+    loadObserver.observe(node);
     observer.observe(node);
 
-    return () => observer.disconnect();
+    return () => {
+      loadObserver.disconnect();
+      observer.disconnect();
+    };
   }, []);
 
   useEffect(() => {
@@ -449,6 +489,12 @@ function ProjectCard({ project, isActive, onSelect }) {
     }
   };
 
+  useEffect(() => {
+    if (shouldLoad) {
+      videoRef.current?.load();
+    }
+  }, [project.video, shouldLoad]);
+
   const openFullscreen = (event) => {
     event.stopPropagation();
     videoRef.current?.requestFullscreen?.();
@@ -474,12 +520,13 @@ function ProjectCard({ project, isActive, onSelect }) {
       <div className="project-visual">
         <video
           ref={videoRef}
-          src={isVisible ? project.video : undefined}
+          src={shouldLoad ? project.video : undefined}
           muted={isMuted}
           loop
           playsInline
-          preload="metadata"
+          preload={shouldLoad ? "auto" : "none"}
           onLoadedMetadata={playVideo}
+          onLoadedData={playVideo}
           onCanPlay={playVideo}
         />
 
