@@ -130,7 +130,7 @@ export const projects = [
       "A cinematic highlight film capturing laughter, traditions, and intimate family moments from the ceremony.",
     tags: ["Haldi", "Story", "Emotion"],
     metrics: ["3 min film", "Warm tones", "Audio cleanup"],
-    video: "https://res.cloudinary.com/mvuav11r/video/upload/v1783602492/Hal2cloud_ugfngr.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Hal2cloud.mp4"
   },
 
   {
@@ -183,7 +183,7 @@ export const projects = [
       "A joyful edit showcasing laughter, family interactions, and colorful festivities.",
     tags: ["Haldi", "Candid", "Celebration"],
     metrics: ["2 min film", "Warm grading", "Storytelling"],
-    video: "https://res.cloudinary.com/mvuav11r/video/upload/v1783602484/Hal1cloud_zgxvzi.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Hal1cloud.mp4"
   },
 
   // Additional Wedding video
@@ -419,7 +419,7 @@ export const mediaSamples = [
   {
     title: "Haldi Reels",
     category: "Story / Sound / Emotion",
-    src: "https://res.cloudinary.com/mvuav11r/video/upload/v1783602492/Hal2cloud_ugfngr.mp4",
+    src: "https://sonuportfolio.b-cdn.net/Hal2cloud.mp4",
     poster: "",
     browserPlayable: true
   },
