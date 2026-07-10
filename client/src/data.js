@@ -115,7 +115,7 @@ export const projects = [
       "An upbeat edit with beat-synced cuts, dynamic pacing, and colorful visuals to capture the spirit of the event.",
     tags: ["Sangeet", "Energy", "Music"],
     metrics: ["60 sec reel", "Beat sync", "Social-ready"],
-    video: "https://res.cloudinary.com/mvuav11r/video/upload/v1783602177/Sang1cloud_yjwaa4.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Sang1cloud.mp4"
   },
 
   {
@@ -164,7 +164,7 @@ export const projects = [
       "An upbeat edit with beat-synced cuts, dynamic pacing, and colorful visuals to capture the spirit of the event.",
     tags: ["Sangeet", "Energy", "Music"],
     metrics: ["60 sec reel", "Beat sync", "Social-ready"],
-    video: "https://res.cloudinary.com/mvuav11r/video/upload/v1783602197/Sang2cloud_qdzjbs.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Sang2cloud.mp4"
   },
 
   
@@ -412,7 +412,7 @@ export const mediaSamples = [
   {
     title: "Sangeet Nights",
     category: "Hook / Captions / Energy",
-    src: "https://res.cloudinary.com/mvuav11r/video/upload/v1783602177/Sang1cloud_yjwaa4.mp4",
+    src: "https://sonuportfolio.b-cdn.net/Sang1cloud.mp4",
     poster: "",
     browserPlayable: true
   },
