@@ -187,20 +187,6 @@ export const projects = [
   },
 
   // Additional Wedding video
-  {
-    title: "Wedding Film 2",
-    type: "Wedding",
-    discipline: "Wedding",
-    featured: false,
-    year: "2025",
-    result:
-      "Delivered a cinematic wedding experience with elegant storytelling.",
-    description:
-      "An emotional wedding film highlighting key moments, vows, and celebrations.",
-    tags: ["Wedding", "Emotion", "Cinema"],
-    metrics: ["6 min film", "4K delivery", "Social edits"],
-    video: "https://res.cloudinary.com/mvuav11r/video/upload/v1783600355/Wed2cloud_rjn7g9.mp4"
-  },
 
   {
     title: "Wedding Film 4",
@@ -252,21 +238,6 @@ export const projects = [
 
 
   // Additional Engagement video
-
-  {
-    title: "Engagement Teaser 2",
-    type: "Engagement",
-    discipline: "Engagement",
-    featured: false,
-    year: "2025",
-    result:
-      "Crafted elegant teaser films that celebrate every meaningful moment.",
-    description:
-      "A romantic short-form edit featuring cinematic transitions, music synchronization, and emotional moments.",
-    tags: ["Engagement", "Teaser", "Reels"],
-    metrics: ["45 sec teaser", "Vertical format", "Color graded"],
-    video: "https://res.cloudinary.com/s0e32cgr/video/upload/v1783601785/Eng2cloud_ahyag7.mp4"
-  },
 
   {
     title: "Engagement Teaser 3",
@@ -355,20 +326,6 @@ export const projects = [
     video: "https://res.cloudinary.com/s0e32cgr/video/upload/v1783600516/Reel4cloud_pou0rj.mp4"
   },
 
-  {
-    title: "Instagram Wedding Reel 4",
-    type: "Social Media",
-    discipline: "Reels",
-    featured: false,
-    year: "2025",
-    result:
-      "Designed engaging short-form edits optimized for social media performance.",
-    description:
-      "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
-    tags: ["Reels", "Instagram", "Vertical"],
-    metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://res.cloudinary.com/s0e32cgr/video/upload/v1783600502/Reel3cloud_p74kz4.mp4"
-  },
 
   {
     title: "Instagram Wedding Reel 5",
