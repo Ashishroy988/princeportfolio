@@ -188,20 +188,6 @@ export const projects = [
 
   // Additional Wedding video
 
-  {
-    title: "Wedding Film 4",
-    type: "Wedding",
-    discipline: "Wedding",
-    featured: false,
-    year: "2025",
-    result:
-      "Delivered a cinematic wedding experience with elegant storytelling.",
-    description:
-      "An emotional wedding film highlighting key moments, vows, and celebrations.",
-    tags: ["Wedding", "Emotion", "Cinema"],
-    metrics: ["6 min film", "4K delivery", "Social edits"],
-    video: "https://res.cloudinary.com/mvuav11r/video/upload/v1783600323/Wed3cloud_objtbx.mp4"
-  },
 
    {
     title: "Wedding Reels 1",
