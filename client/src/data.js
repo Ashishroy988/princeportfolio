@@ -85,7 +85,7 @@ export const projects = [
       "A beautifully crafted wedding film combining emotional storytelling, elegant pacing, and cinematic visuals.",
     tags: ["Wedding", "Story", "Cinematic"],
     metrics: ["5 min film", "60 sec reel", "4K export"],
-    video: "https://res.cloudinary.com/mvuav11r/video/upload/v1783600263/Wed4cloud_wt1m6f.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Wed4cloud.mp4"
   },
 
   {
@@ -145,7 +145,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://res.cloudinary.com/s0e32cgr/video/upload/v1783600579/Reel6cloud_xan3wo.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Reel6cloud.mp4"
   },
 
 
@@ -201,7 +201,7 @@ export const projects = [
       "Edited a wedding reel optimized for Instagram and YouTube Shorts, combining storytelling, sound design, motion effects, and cinematic visuals to highlight the celebration's most memorable moments.",
     tags: ["Short Form","Wedding", "Emotion", "Reels"],
     metrics: ["Social edits", "4K delivery", "High Engagement"],
-    video: "https://res.cloudinary.com/mvuav11r/video/upload/v1783600293/Wed5cloud_z2tyhb.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Wed5cloud.mp4"
   },
 
    {
@@ -216,7 +216,7 @@ export const projects = [
       "Premium wedding reel production featuring smooth cuts, emotional pacing, color correction, and social-media-ready formatting for maximum engagement and reach.",
     tags: ["Instagram", "Emotion", "Wedding"],
     metrics: ["Viral-Ready Edit", "4K delivery", "Social edits"],
-    video: "https://res.cloudinary.com/mvuav11r/video/upload/v1783600297/Wed6cloud_zrngeg.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Wed6cloud.mp4"
   },
 
 
@@ -294,7 +294,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://res.cloudinary.com/s0e32cgr/video/upload/v1783600606/Reel5cloud_wyw764.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Reel5cloud.mp4"
   },
 
   {
@@ -309,7 +309,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://res.cloudinary.com/s0e32cgr/video/upload/v1783600516/Reel4cloud_pou0rj.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Reel4cloud.mp4"
   },
 
 
@@ -325,7 +325,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://res.cloudinary.com/s0e32cgr/video/upload/v1783600500/Reel1cloud_jrpmdt.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Reel1cloud.mp4"
   },
 
   {
@@ -340,7 +340,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://res.cloudinary.com/s0e32cgr/video/upload/v1783600499/Reel2cloud_oydezb.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Reel2cloud.mp4"
   },
 
   {
@@ -355,7 +355,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://res.cloudinary.com/s0e32cgr/video/upload/v1783600513/Reel7cloud_njh9du.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Reel7cloud.mp4"
   },
 
 
@@ -371,7 +371,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://res.cloudinary.com/s0e32cgr/video/upload/v1783600578/Reel8cloud_dss36d.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Reel8cloud.mp4"
   },
 
 
@@ -398,7 +398,7 @@ export const mediaSamples = [
   {
     title: "Wedding Teaser & Highlights",
     category: "Color / Motion / Pacing",
-    src: "https://res.cloudinary.com/mvuav11r/video/upload/v1783600311/Wed1cloud_unzvdb.mp4",
+    src: "https://sonuportfolio.b-cdn.net/Wed1cloud.mp4",
     poster: "",
     browserPlayable: true
   },
@@ -426,7 +426,7 @@ export const mediaSamples = [
   {
     title: "Insta Reels",
     category: "Cinematography / Grade",
-    src: "https://res.cloudinary.com/s0e32cgr/video/upload/v1783600579/Reel6cloud_xan3wo.mp4",
+    src: "https://sonuportfolio.b-cdn.net/Reel6cloud.mp4",
     poster: "",
     browserPlayable: true
   }
