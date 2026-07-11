@@ -1,8 +1,8 @@
 export const editorProfile = {
-  name: "Sonu kumar",
+  name: "Sonu Kumar",
   title: "Wedding Filmmaker & Editor",
   tagline:
-    "Based in Patna(Bihar), India. I specialize in cinematic wedding films, teasers, highlights,Reels and pre-wedding stories. My focus is on creating emotional films through thoughtful storytelling, camera work and post-production.",
+    "Based in Patna, Bihar, India. I specialize in cinematic wedding films, teasers, highlights, reels, and pre-wedding stories. My focus is on creating emotional films through thoughtful storytelling, camera work, and post-production.",
 
   email: "Sonusantosh10122000@gmail.com",
   phone: "+91 6204563981",
@@ -25,7 +25,7 @@ export const portraits = [
   },
   {
     src: "/media/Pic3.jpeg",
-    alt: "Sonu Kumar sitting infront of their WorkSpace"
+    alt: "Sonu Kumar sitting in front of his workspace"
   }
  
 
@@ -34,7 +34,7 @@ export const portraits = [
 export const stats = [
   { value: "120+", label: "Projects Edited" },
   { value: "50+", label: "Wedding Shoots" },
-  { value: "1+Years", label: "Editing Experience" },
+  { value: "1+ Years", label: "Editing Experience" },
   { value: "48h", label: "Fast turnaround" }
 ];
 

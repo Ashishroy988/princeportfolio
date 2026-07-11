@@ -23,7 +23,9 @@ import {
   Maximize2,
   RotateCcw,
   Save,
-  Trash2
+  Trash2,
+  Volume2,
+  VolumeX
 } from "lucide-react";
 
 
@@ -45,6 +47,32 @@ const apiUrl =
   import.meta.env.VITE_API_URL ||
   `${window.location.protocol}//${window.location.hostname || "localhost"}:5000`;
 const serviceOptions = ["Studio role", "Commercial", "Photography studio", "Social media", "Wedding", "Other"];
+const toolBranding = {
+  "Premiere Pro": {
+    name: "Adobe Premiere Pro",
+    logo: "/media/premiere-pro.svg",
+    specialty: "Editing, pacing, audio, and delivery",
+    level: "Primary editing tool",
+    accent: "#9999ff",
+    url: "https://www.adobe.com/products/premiere.html"
+  },
+  "After Effects": {
+    name: "Adobe After Effects",
+    logo: "/media/after-effects.svg",
+    specialty: "Motion titles, transitions, and effects",
+    level: "Motion graphics",
+    accent: "#9999ff",
+    url: "https://www.adobe.com/products/aftereffects.html"
+  },
+  "DaVinci Resolve (Basic)": {
+    name: "DaVinci Resolve",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Logo_DavinciResolve_Simple.svg",
+    specialty: "Color correction, grading, and finishing",
+    level: "Working knowledge",
+    accent: "#44a9d8",
+    url: "https://www.blackmagicdesign.com/products/davinciresolve"
+  }
+};
 
 const defaultSections = {
   positioningEyebrow: "Positioning",
@@ -325,7 +353,7 @@ return (
       onClick={() => setIsMuted(!isMuted)}
       aria-label={isMuted ? "Unmute video" : "Mute video"}
     >
-      {isMuted ? "🔇" : "🔊"}
+      {isMuted ? <VolumeX size={18} aria-hidden="true" /> : <Volume2 size={18} aria-hidden="true" />}
     </button>
 
     <button
@@ -577,7 +605,7 @@ function ProjectCard({ project, isActive, onSelect }) {
         </div>
 
         <button className="mute-btn" type="button" onClick={toggleMute} aria-label={isMuted ? "Unmute video" : "Mute video"}>
-          {isMuted ? "🔇" : "🔊"}
+          {isMuted ? <VolumeX size={18} aria-hidden="true" /> : <Volume2 size={18} aria-hidden="true" />}
         </button>
 
         <button className="fullscreen-btn" type="button" onClick={openFullscreen} aria-label="Open fullscreen">
@@ -1633,9 +1661,6 @@ function App() {
   const [activeDiscipline, setActiveDiscipline] = useState("All");
   const [featuredIndex, setFeaturedIndex] = useState(0);
 
-const [featuredMuted, setFeaturedMuted] = useState(true);
-const featuredVideoRef = useRef(null);
-
   useEffect(() => {
     const loadContentOverrides = async () => {
       try {
@@ -1665,6 +1690,7 @@ const featuredVideoRef = useRef(null);
 
     loadContentOverrides();
   }, []);
+
   const reelBars = useMemo(
     () => Array.from({ length: 24 }, (_, index) => 16 + ((index * 19) % 66)),
     []
@@ -1896,11 +1922,36 @@ const featuredVideoRef = useRef(null);
           })}
         </div>
 
-     <div className="tool-marquee" aria-label="Editing tools">
-  {tools.map((tool) => (
-    <span key={tool}>{tool}</span>
-  ))}
-</div>
+        <div className="tool-showcase" aria-label="Editing software">
+          {tools.map((tool) => {
+            const branding = toolBranding[tool];
+            const ToolCard = branding?.url ? "a" : "article";
+
+            return (
+              <ToolCard
+                className="tool-card"
+                key={tool}
+                href={branding?.url}
+                target={branding?.url ? "_blank" : undefined}
+                rel={branding?.url ? "noreferrer" : undefined}
+                style={{ "--tool-accent": branding?.accent || "#39d4b5" }}
+                aria-label={branding?.url ? `Visit the official ${branding.name} website` : undefined}
+              >
+                {branding?.logo ? (
+                  <img src={branding.logo} alt="" width="64" height="64" loading="lazy" />
+                ) : (
+                  <span className="tool-initials" aria-hidden="true">{tool.slice(0, 2)}</span>
+                )}
+                <div>
+                  <p>{branding?.level || "Editing tool"}</p>
+                  <h3>{branding?.name || tool}</h3>
+                  <span>{branding?.specialty || "Creative post-production workflow"}</span>
+                </div>
+                {branding?.url && <ArrowUpRight className="tool-link-icon" size={18} aria-hidden="true" />}
+              </ToolCard>
+            );
+          })}
+        </div>
 
 
       </section>
