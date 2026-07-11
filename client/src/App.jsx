@@ -54,7 +54,7 @@ const toolBranding = {
     specialty: "Editing, pacing, audio, and delivery",
     level: "Primary editing tool",
     accent: "#9999ff",
-    url: "https://www.adobe.com/products/premiere.html"
+    url: "https://www.adobe.com/in/products/premiere.html"
   },
   "After Effects": {
     name: "Adobe After Effects",
@@ -62,7 +62,7 @@ const toolBranding = {
     specialty: "Motion titles, transitions, and effects",
     level: "Motion graphics",
     accent: "#9999ff",
-    url: "https://www.adobe.com/products/aftereffects.html"
+    url: "https://www.adobe.com/in/products/aftereffects.html"
   },
   "DaVinci Resolve (Basic)": {
     name: "DaVinci Resolve",
