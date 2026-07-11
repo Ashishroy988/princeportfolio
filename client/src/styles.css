@@ -78,8 +78,11 @@ button {
   font-weight: 850;
 }
 
-.brand svg {
-  color: #39d4b5;
+.brand img {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.55rem;
+  box-shadow: 0 0 1.25rem rgba(57, 212, 181, 0.16);
 }
 
 .site-header nav {

@@ -1685,7 +1685,7 @@ const featuredVideoRef = useRef(null);
     <main className="app-shell">
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Sonu Kumar home">
-          <Clapperboard size={24} />
+          <img src="/sonu-kumar-logo.svg" alt="" width="36" height="36" />
           <span>Sonu Kumar</span>
         </a>
         <nav aria-label="Primary navigation">
