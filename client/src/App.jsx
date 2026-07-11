@@ -1739,6 +1739,7 @@ const featuredVideoRef = useRef(null);
           <a href="#capabilities">Capabilities</a>
           <a href="#process">Process</a>
           <a href="#contact">Contact</a>
+          <a href="/admin">Admin</a>
         </nav>
       </header>
 
