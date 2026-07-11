@@ -418,11 +418,19 @@ function ProjectCard({ project, isActive, onSelect }) {
   const [isMuted, setIsMuted] = useState(true);
   const [isVisible, setIsVisible] = useState(false);
   const [shouldLoad, setShouldLoad] = useState(false);
+  const [isPreviewing, setIsPreviewing] = useState(false);
+  const [isFrameReady, setIsFrameReady] = useState(false);
+  const projectMetrics = Array.isArray(project.metrics)
+    ? project.metrics
+    : String(project.metrics || "")
+        .split(",")
+        .map((metric) => metric.trim())
+        .filter(Boolean);
 
   const playVideo = () => {
     const video = videoRef.current;
 
-    if (!video || !isVisible) {
+    if (!video || !isVisible || !isPreviewing) {
       return;
     }
 
@@ -476,7 +484,23 @@ function ProjectCard({ project, isActive, onSelect }) {
     }
 
     playVideo();
-  }, [isMuted, isVisible, project.video]);
+  }, [isMuted, isPreviewing, isVisible, project.video]);
+
+  const prepareCoverFrame = () => {
+    const video = videoRef.current;
+
+    if (!video) return;
+    video.currentTime = Number.isFinite(video.duration)
+      ? Math.min(0.6, Math.max(video.duration - 0.1, 0))
+      : 0;
+  };
+
+  const startPreview = () => setIsPreviewing(true);
+  const stopPreview = () => {
+    const video = videoRef.current;
+    setIsPreviewing(false);
+    video?.pause();
+  };
 
   const toggleMute = (event) => {
     event.stopPropagation();
@@ -515,9 +539,15 @@ function ProjectCard({ project, isActive, onSelect }) {
       tabIndex={0}
       onClick={onSelect}
       onKeyDown={handleKeyDown}
+      onMouseEnter={startPreview}
+      onMouseLeave={stopPreview}
+      onFocus={startPreview}
+      onBlur={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget)) stopPreview();
+      }}
       aria-label={`Select ${project.title}`}
     >
-      <div className="project-visual">
+      <div className={`project-visual ${isPreviewing ? "is-previewing" : ""} ${isFrameReady ? "is-ready" : ""}`}>
         <video
           ref={videoRef}
           src={shouldLoad ? project.video : undefined}
@@ -525,10 +555,26 @@ function ProjectCard({ project, isActive, onSelect }) {
           loop
           playsInline
           preload={shouldLoad ? "auto" : "none"}
-          onLoadedMetadata={playVideo}
-          onLoadedData={playVideo}
+          onLoadedMetadata={prepareCoverFrame}
+          onSeeked={() => {
+            setIsFrameReady(true);
+            playVideo();
+          }}
           onCanPlay={playVideo}
         />
+
+        <div className="project-shade" />
+        <div className="project-visual-meta">
+          <span>{project.type}</span>
+          <span>{project.year}</span>
+        </div>
+        <div className="project-play" aria-hidden="true">
+          <Play size={22} fill="currentColor" />
+        </div>
+        <div className="project-format">
+          <span>{projectMetrics[0] || "Highlight film"}</span>
+          <span>{projectMetrics[projectMetrics.length - 1] || "HD delivery"}</span>
+        </div>
 
         <button className="mute-btn" type="button" onClick={toggleMute} aria-label={isMuted ? "Unmute video" : "Mute video"}>
           {isMuted ? "🔇" : "🔊"}
@@ -538,11 +584,10 @@ function ProjectCard({ project, isActive, onSelect }) {
           <Maximize2 size={18} />
         </button>
 
-        <span>{project.year}</span>
       </div>
 
       <div className="project-body">
-        <p>{project.type}</p>
+        <p className="project-kicker">Featured work</p>
         <h3>{project.title}</h3>
         <span>{project.result}</span>
         <div className="tag-row">
@@ -1694,7 +1739,6 @@ const featuredVideoRef = useRef(null);
           <a href="#capabilities">Capabilities</a>
           <a href="#process">Process</a>
           <a href="#contact">Contact</a>
-          <a href="/admin">Admin</a>
         </nav>
       </header>
 

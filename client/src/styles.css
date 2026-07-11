@@ -602,6 +602,14 @@ h1 {
   cursor: pointer;
   content-visibility: auto;
   contain-intrinsic-size: 430px;
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.project-card:hover,
+.project-card:focus-within {
+  transform: translateY(-5px);
+  border-color: rgba(228, 176, 95, 0.42);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
 }
 
 .project-card.active {
@@ -617,15 +625,88 @@ h1 {
 .project-visual {
   position: relative;
   overflow: hidden;
-  min-height: 220px;
+  aspect-ratio: 16 / 10;
   border-radius: 0.3rem;
+  background: linear-gradient(135deg, #14302f, #2a1f15);
 }
 
 .project-visual video {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0;
+  transform: scale(1.01);
+  transition: opacity 350ms ease, transform 900ms ease;
 }
+
+.project-visual.is-ready video {
+  opacity: 1;
+}
+
+.project-visual.is-previewing video {
+  transform: scale(1.045);
+}
+
+.project-shade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(8, 9, 11, 0.44), transparent 42%, rgba(8, 9, 11, 0.82));
+}
+
+.project-visual-meta,
+.project-format {
+  position: absolute;
+  z-index: 2;
+  right: 14px;
+  left: 14px;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.project-visual-meta { top: 14px; }
+.project-format { bottom: 14px; color: #ddd5c8; letter-spacing: 0; text-transform: none; }
+
+.project-visual-meta span {
+  padding: 0.34rem 0.55rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(8, 9, 11, 0.58);
+  backdrop-filter: blur(8px);
+}
+
+.project-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  display: grid;
+  width: 52px;
+  height: 52px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  border-radius: 50%;
+  color: #07110f;
+  background: rgba(57, 212, 181, 0.92);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.32);
+  transform: translate(-50%, -50%);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.project-visual.is-previewing .project-play {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.82);
+}
+
+.project-visual .mute-btn { top: 54px; }
+.project-visual .fullscreen-btn { bottom: 44px; }
 
 .visual-1 {
   background: linear-gradient(135deg, #14302f, #2a1f15);
@@ -650,6 +731,15 @@ h1 {
 .project-body h3 {
   margin-bottom: 0.7rem;
   font-size: 1.35rem;
+}
+
+.project-body .project-kicker {
+  margin-bottom: 0.55rem;
+  color: #39d4b5;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .project-body span {
