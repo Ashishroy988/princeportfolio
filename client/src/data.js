@@ -115,7 +115,7 @@ export const projects = [
       "An upbeat edit with beat-synced cuts, dynamic pacing, and colorful visuals to capture the spirit of the event.",
     tags: ["Sangeet", "Energy", "Music"],
     metrics: ["60 sec reel", "Beat sync", "Social-ready"],
-    video: "https://sonuportfolio.b-cdn.net/Sang1cloud.mp4"
+    video: "https://sonukumarportfolio.b-cdn.net/Sang1cloud1.mp4"
   },
 
   {
@@ -130,7 +130,7 @@ export const projects = [
       "A cinematic highlight film capturing laughter, traditions, and intimate family moments from the ceremony.",
     tags: ["Haldi", "Story", "Emotion"],
     metrics: ["3 min film", "Warm tones", "Audio cleanup"],
-    video: "https://sonuportfolio.b-cdn.net/Hal2cloud.mp4"
+    video: "https://sonukumarportfolio.b-cdn.net/Hal2cloud.mp4"
   },
 
   {
@@ -164,7 +164,7 @@ export const projects = [
       "An upbeat edit with beat-synced cuts, dynamic pacing, and colorful visuals to capture the spirit of the event.",
     tags: ["Sangeet", "Energy", "Music"],
     metrics: ["60 sec reel", "Beat sync", "Social-ready"],
-    video: "https://sonuportfolio.b-cdn.net/Sang2cloud.mp4"
+    video: "https://sonukumarportfolio.b-cdn.net/Sang2cloud.mp4"
   },
 
   
@@ -183,7 +183,7 @@ export const projects = [
       "A joyful edit showcasing laughter, family interactions, and colorful festivities.",
     tags: ["Haldi", "Candid", "Celebration"],
     metrics: ["2 min film", "Warm grading", "Storytelling"],
-    video: "https://sonuportfolio.b-cdn.net/Hal1cloud.mp4"
+    video: "https://sonukumarportfolio.b-cdn.net/Hal1cloud.mp4"
   },
 
   // Additional Wedding video
@@ -412,14 +412,14 @@ export const mediaSamples = [
   {
     title: "Sangeet Nights",
     category: "Hook / Captions / Energy",
-    src: "https://sonuportfolio.b-cdn.net/Sang1cloud.mp4",
+    src: "https://sonukumarportfolio.b-cdn.net/Sang1cloud1.mp4",
     poster: "",
     browserPlayable: true
   },
   {
     title: "Haldi Reels",
     category: "Story / Sound / Emotion",
-    src: "https://sonuportfolio.b-cdn.net/Hal2cloud.mp4",
+    src: "https://sonukumarportfolio.b-cdn.net/Hal2cloud.mp4",
     poster: "",
     browserPlayable: true
   },
