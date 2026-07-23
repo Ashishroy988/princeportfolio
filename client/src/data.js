@@ -100,7 +100,7 @@ export const projects = [
       "A romantic short-form edit featuring cinematic transitions, music synchronization, and emotional moments.",
     tags: ["Engagement", "Teaser", "Reels"],
     metrics: ["45 sec teaser", "Vertical format", "Color graded"],
-    video: "https://sonuportfolio.b-cdn.net/Eng1cloud.mp4"
+    video: "https://sonukumarportfolio.b-cdn.net/Eng1cloud.mp4"
   },
 
   {
@@ -237,7 +237,7 @@ export const projects = [
       "A romantic short-form edit featuring cinematic transitions, music synchronization, and emotional moments.",
     tags: ["Engagement", "Teaser", "Reels"],
     metrics: ["45 sec teaser", "Vertical format", "Color graded"],
-    video: "https://sonuportfolio.b-cdn.net/Eng3cloud.mp4"
+    video: "https://sonukumarportfolio.b-cdn.net/Eng3cloud.mp4"
   },
 
   {
@@ -252,7 +252,7 @@ export const projects = [
       "A romantic short-form edit featuring cinematic transitions, music synchronization, and emotional moments.",
     tags: ["Engagement", "Teaser", "Reels"],
     metrics: ["45 sec teaser", "Vertical format", "Color graded"],
-    video: "https://sonuportfolio.b-cdn.net/Eng4cloud.mp4"
+    video: "https://sonukumarportfolio.b-cdn.net/Eng4cloud.mp4"
   },
 
   {
@@ -267,7 +267,7 @@ export const projects = [
       "A romantic short-form edit featuring cinematic transitions, music synchronization, and emotional moments.",
     tags: ["Engagement", "Teaser", "Reels"],
     metrics: ["45 sec teaser", "Vertical format", "Color graded"],
-    video: "https://sonuportfolio.b-cdn.net/Eng5cloud.mp4"
+    video: "https://sonukumarportfolio.b-cdn.net/Eng5cloud.mp4"
   },
 
 
@@ -405,7 +405,7 @@ export const mediaSamples = [
   {
     title: "Engagement Teaser & Highlights",
     category: "Vertical / Beat Sync",
-    src: "https://sonuportfolio.b-cdn.net/Eng1cloud.mp4",
+    src: "https://sonukumarportfolio.b-cdn.net/Eng1cloud.mp4",
     poster: "",
     browserPlayable: true
   },
