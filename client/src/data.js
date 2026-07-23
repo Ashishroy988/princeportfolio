@@ -85,7 +85,7 @@ export const projects = [
       "A beautifully crafted wedding film combining emotional storytelling, elegant pacing, and cinematic visuals.",
     tags: ["Wedding", "Story", "Cinematic"],
     metrics: ["5 min film", "60 sec reel", "4K export"],
-    video: "https://sonuportfolio.b-cdn.net/Wed4cloud.mp4"
+    video: "https://sonukumarportfolio.b-cdn.net/Wed4cloud.mp4"
   },
 
   {
@@ -201,7 +201,7 @@ export const projects = [
       "Edited a wedding reel optimized for Instagram and YouTube Shorts, combining storytelling, sound design, motion effects, and cinematic visuals to highlight the celebration's most memorable moments.",
     tags: ["Short Form","Wedding", "Emotion", "Reels"],
     metrics: ["Social edits", "4K delivery", "High Engagement"],
-    video: "https://sonuportfolio.b-cdn.net/Wed5cloud.mp4"
+    video: "https://sonukumarportfolio.b-cdn.net/Wed5cloud.mp4"
   },
 
    {
@@ -216,7 +216,7 @@ export const projects = [
       "Premium wedding reel production featuring smooth cuts, emotional pacing, color correction, and social-media-ready formatting for maximum engagement and reach.",
     tags: ["Instagram", "Emotion", "Wedding"],
     metrics: ["Viral-Ready Edit", "4K delivery", "Social edits"],
-    video: "https://sonuportfolio.b-cdn.net/Wed6cloud.mp4"
+    video: "https://sonukumarportfolio.b-cdn.net/Wed6cloud.mp4"
   },
 
 
@@ -398,7 +398,7 @@ export const mediaSamples = [
   {
     title: "Wedding Teaser & Highlights",
     category: "Color / Motion / Pacing",
-    src: "https://sonuportfolio.b-cdn.net/Wed1cloud.mp4",
+    src: "https://sonukumarportfolio.b-cdn.net/Wed1cloud.mp4",
     poster: "",
     browserPlayable: true
   },
