@@ -85,7 +85,7 @@ export const projects = [
       "A beautifully crafted wedding film combining emotional storytelling, elegant pacing, and cinematic visuals.",
     tags: ["Wedding", "Story", "Cinematic"],
     metrics: ["5 min film", "60 sec reel", "4K export"],
-    video: "https://sonukumarportfolio.b-cdn.net/Wed4cloud.mp4"
+    video: "https://sonukumarportfolio.b-cdn.net/Wed7cloud.mp4"
   },
 
   {
