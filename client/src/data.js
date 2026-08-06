@@ -115,7 +115,7 @@ export const projects = [
       "An upbeat edit with beat-synced cuts, dynamic pacing, and colorful visuals to capture the spirit of the event.",
     tags: ["Sangeet", "Energy", "Music"],
     metrics: ["60 sec reel", "Beat sync", "Social-ready"],
-    video: "https://sonukumarportfolio.b-cdn.net/Sang1cloud1.mp4"
+    video: "https://sonu.b-cdn.net/Sang1cloud1.mp4"
   },
 
   {
@@ -130,7 +130,7 @@ export const projects = [
       "A cinematic highlight film capturing laughter, traditions, and intimate family moments from the ceremony.",
     tags: ["Haldi", "Story", "Emotion"],
     metrics: ["3 min film", "Warm tones", "Audio cleanup"],
-    video: "https://sonukumarportfolio.b-cdn.net/Hal2cloud.mp4"
+    video: "https://sonu.b-cdn.net/Hal2cloud.mp4"
   },
 
   {
@@ -145,7 +145,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://sonukumarportfolio.b-cdn.net/Reel6cloud.mp4"
+    video: "https://sonu.b-cdn.net/Reel6cloud.mp4"
   },
 
 
@@ -164,7 +164,7 @@ export const projects = [
       "An upbeat edit with beat-synced cuts, dynamic pacing, and colorful visuals to capture the spirit of the event.",
     tags: ["Sangeet", "Energy", "Music"],
     metrics: ["60 sec reel", "Beat sync", "Social-ready"],
-    video: "https://sonukumarportfolio.b-cdn.net/Sang2cloud.mp4"
+    video: "https://sonu.b-cdn.net/Sang2cloud.mp4"
   },
 
   
@@ -183,7 +183,7 @@ export const projects = [
       "A joyful edit showcasing laughter, family interactions, and colorful festivities.",
     tags: ["Haldi", "Candid", "Celebration"],
     metrics: ["2 min film", "Warm grading", "Storytelling"],
-    video: "https://sonukumarportfolio.b-cdn.net/Hal1cloud.mp4"
+    video: "https://sonu.b-cdn.net/Hal1cloud.mp4"
   },
 
   // Additional Wedding video
@@ -288,7 +288,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://sonukumarportfolio.b-cdn.net/Reel5cloud.mp4"
+    video: "https://sonu.b-cdn.net/Reel5cloud.mp4"
   },
 
   {
@@ -303,7 +303,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://sonukumarportfolio.b-cdn.net/Reel4cloud.mp4"
+    video: "https://sonu.b-cdn.net/Reel4cloud.mp4"
   },
 
 
@@ -319,7 +319,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://sonukumarportfolio.b-cdn.net/Reel1cloud.mp4"
+    video: "https://sonu.b-cdn.net/Reel1cloud.mp4"
   },
 
   {
@@ -334,7 +334,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://sonukumarportfolio.b-cdn.net/Reel2cloud.mp4"
+    video: "https://sonu.b-cdn.net/Reel2cloud.mp4"
   },
 
   {
@@ -349,7 +349,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://sonukumarportfolio.b-cdn.net/Reel7cloud.mp4"
+    video: "https://sonu.b-cdn.net/Reel7cloud.mp4"
   },
 
 
@@ -365,19 +365,8 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://sonukumarportfolio.b-cdn.net/Reel8cloud.mp4"
+    video: "https://sonu.b-cdn.net/Reel8cloud.mp4"
   },
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -406,21 +395,21 @@ export const mediaSamples = [
   {
     title: "Sangeet Nights",
     category: "Hook / Captions / Energy",
-    src: "https://sonukumarportfolio.b-cdn.net/Sang1cloud1.mp4",
+    src: "https://sonu.b-cdn.net/Sang1cloud1.mp4",
     poster: "",
     browserPlayable: true
   },
   {
     title: "Haldi Reels",
     category: "Story / Sound / Emotion",
-    src: "https://sonukumarportfolio.b-cdn.net/Hal2cloud.mp4",
+    src: "https://sonu.b-cdn.net/Hal2cloud.mp4",
     poster: "",
     browserPlayable: true
   },
   {
     title: "Insta Reels",
     category: "Cinematography / Grade",
-    src: "https://sonukumarportfolio.b-cdn.net/Reel6cloud.mp4",
+    src: "https://sonu.b-cdn.net/Reel6cloud.mp4",
     poster: "",
     browserPlayable: true
   }
