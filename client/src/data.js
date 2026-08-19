@@ -100,7 +100,7 @@ export const projects = [
       "A romantic short-form edit featuring cinematic transitions, music synchronization, and emotional moments.",
     tags: ["Engagement", "Teaser", "Reels"],
     metrics: ["45 sec teaser", "Vertical format", "Color graded"],
-    video: "https://sonu.b-cdn.net/Eng1cloud.mp4"
+    video: "https://wedd1.b-cdn.net/Eng1cloud.mp4"
   },
 
   {
@@ -115,7 +115,7 @@ export const projects = [
       "An upbeat edit with beat-synced cuts, dynamic pacing, and colorful visuals to capture the spirit of the event.",
     tags: ["Sangeet", "Energy", "Music"],
     metrics: ["60 sec reel", "Beat sync", "Social-ready"],
-    video: "https://sonu.b-cdn.net/Sang1cloud1.mp4"
+    video: "https://wedd1.b-cdn.net/Sang1cloud1.mp4"
   },
 
   {
@@ -164,7 +164,7 @@ export const projects = [
       "An upbeat edit with beat-synced cuts, dynamic pacing, and colorful visuals to capture the spirit of the event.",
     tags: ["Sangeet", "Energy", "Music"],
     metrics: ["60 sec reel", "Beat sync", "Social-ready"],
-    video: "https://sonu.b-cdn.net/Sang2cloud.mp4"
+    video: "https://wedd1.b-cdn.net/Sang2cloud.mp4"
   },
 
   
@@ -237,7 +237,7 @@ export const projects = [
       "A romantic short-form edit featuring cinematic transitions, music synchronization, and emotional moments.",
     tags: ["Engagement", "Teaser", "Reels"],
     metrics: ["45 sec teaser", "Vertical format", "Color graded"],
-    video: "https://sonu.b-cdn.net/Eng3cloud.mp4"
+    video: "https://wedd1.b-cdn.net/Eng3cloud.mp4"
   },
 
   {
@@ -252,7 +252,7 @@ export const projects = [
       "A romantic short-form edit featuring cinematic transitions, music synchronization, and emotional moments.",
     tags: ["Engagement", "Teaser", "Reels"],
     metrics: ["45 sec teaser", "Vertical format", "Color graded"],
-    video: "https://sonu.b-cdn.net/Eng4cloud.mp4"
+    video: "https://wedd1.b-cdn.net/Eng4cloud.mp4"
   },
 
   {
@@ -267,7 +267,7 @@ export const projects = [
       "A romantic short-form edit featuring cinematic transitions, music synchronization, and emotional moments.",
     tags: ["Engagement", "Teaser", "Reels"],
     metrics: ["45 sec teaser", "Vertical format", "Color graded"],
-    video: "https://sonu.b-cdn.net/Eng5cloud.mp4"
+    video: "https://wedd1.b-cdn.net/Wed5cloud.mp4"
   },
 
 
@@ -388,14 +388,14 @@ export const mediaSamples = [
   {
     title: "Engagement Teaser & Highlights",
     category: "Vertical / Beat Sync",
-    src: "https://sonu.b-cdn.net/Eng1cloud.mp4",
+    src: "https://wedd1.b-cdn.net/Eng1cloud.mp4",
     poster: "",
     browserPlayable: true
   },
   {
     title: "Sangeet Nights",
     category: "Hook / Captions / Energy",
-    src: "https://sonu.b-cdn.net/Sang1cloud1.mp4",
+    src: "https://wedd1.b-cdn.net/Sang1cloud1.mp4",
     poster: "",
     browserPlayable: true
   },
