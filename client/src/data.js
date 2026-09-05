@@ -145,7 +145,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://wedd1.b-cdn.net/Reel6cloud.mp4"
+    video: "https://kayabatt.b-cdn.net/Reel6cloud.mp4"
   },
 
 
@@ -288,7 +288,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://wedd1.b-cdn.net/Reel5cloud.mp4"
+    video: "https://kayabatt.b-cdn.net/Reel5cloud.mp4"
   },
 
   {
@@ -303,7 +303,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://wedd1.b-cdn.net/Reel4cloud.mp4"
+    video: "https://kayabatt.b-cdn.net/Reel4cloud.mp4"
   },
 
 
@@ -349,7 +349,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://wedd1.b-cdn.net/Reel7cloud.mp4"
+    video: "https://kayabatt.b-cdn.net/Reel7cloud.mp4"
   },
 
 
@@ -365,7 +365,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://wedd1.b-cdn.net/Reel8cloud.mp4"
+    video: "https://kayabatt.b-cdn.net/Reel8cloud.mp4"
   },
 
 
@@ -409,7 +409,7 @@ export const mediaSamples = [
   {
     title: "Insta Reels",
     category: "Cinematography / Grade",
-    src: "https://wedd1.b-cdn.net/Reel6cloud.mp4",
+    src: "https://kayabatt.b-cdn.net/Reel6cloud.mp4",
     poster: "",
     browserPlayable: true
   }
