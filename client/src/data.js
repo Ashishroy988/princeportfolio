@@ -319,7 +319,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://wedd1.b-cdn.net/Reel1cloud.mp4"
+    video: "https://kayabatt.b-cdn.net/Reel1cloud.mp4"
   },
 
   {
@@ -334,7 +334,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://wedd1.b-cdn.net/Reel2cloud.mp4"
+    video: "https://kayabatt.b-cdn.net/Reel2cloud.mp4"
   },
 
   {
