@@ -85,7 +85,7 @@ export const projects = [
       "A beautifully crafted wedding film combining emotional storytelling, elegant pacing, and cinematic visuals.",
     tags: ["Wedding", "Story", "Cinematic"],
     metrics: ["5 min film", "60 sec reel", "4K export"],
-    video: "https://kayabatt.b-cdn.net/Wed7cloud.mp4"
+    video: "https://KRIOSKA2.b-cdn.net/Wed7cloud.mp4"
   },
 
   {
@@ -115,7 +115,7 @@ export const projects = [
       "An upbeat edit with beat-synced cuts, dynamic pacing, and colorful visuals to capture the spirit of the event.",
     tags: ["Sangeet", "Energy", "Music"],
     metrics: ["60 sec reel", "Beat sync", "Social-ready"],
-    video: "https://kayabatt.b-cdn.net/Sang1cloud1.mp4"
+    video: "https://KRIOSKA2.b-cdn.net/Sang1cloud1.mp4"
   },
 
   {
@@ -130,7 +130,7 @@ export const projects = [
       "A cinematic highlight film capturing laughter, traditions, and intimate family moments from the ceremony.",
     tags: ["Haldi", "Story", "Emotion"],
     metrics: ["3 min film", "Warm tones", "Audio cleanup"],
-    video: "https://kayabatt.b-cdn.net/Hal2cloud.mp4"
+    video: "https://KRIOSKA2.b-cdn.net/Hal2cloud.mp4"
   },
 
   {
@@ -183,7 +183,7 @@ export const projects = [
       "A joyful edit showcasing laughter, family interactions, and colorful festivities.",
     tags: ["Haldi", "Candid", "Celebration"],
     metrics: ["2 min film", "Warm grading", "Storytelling"],
-    video: "https://kayabatt.b-cdn.net/Hal1cloud.mp4"
+    video: "https://KRIOSKA2.b-cdn.net/Hal1cloud.mp4"
   },
 
   // Additional Wedding video
@@ -201,11 +201,26 @@ export const projects = [
       "Edited a wedding reel optimized for Instagram and YouTube Shorts, combining storytelling, sound design, motion effects, and cinematic visuals to highlight the celebration's most memorable moments.",
     tags: ["Short Form","Wedding", "Emotion", "Reels"],
     metrics: ["Social edits", "4K delivery", "High Engagement"],
-    video: "https://kayabatt.b-cdn.net/Wed5cloud.mp4"
+    video: "https://KRIOSKA2.b-cdn.net/Wed5cloud.mp4"
   },
 
    {
     title: "Wedding Reels 2",
+    type: "Wedding",
+    discipline: "Wedding",
+    featured: false,
+    year: "2026",
+    result:
+      "Transformed precious wedding moments into cinematic stories worth reliving",
+    description:
+      "Premium wedding reel production featuring smooth cuts, emotional pacing, color correction, and social-media-ready formatting for maximum engagement and reach.",
+    tags: ["Instagram", "Emotion", "Wedding"],
+    metrics: ["Viral-Ready Edit", "4K delivery", "Social edits"],
+    video: "https://KRIOSKA2.b-cdn.net/Wed6cloud.mp4"
+
+  },
+   {
+    title: "Wedding Reels 3",
     type: "Wedding",
     discipline: "Wedding",
     featured: false,
@@ -216,9 +231,25 @@ export const projects = [
       "Premium wedding reel production featuring smooth cuts, emotional pacing, color correction, and social-media-ready formatting for maximum engagement and reach.",
     tags: ["Instagram", "Emotion", "Wedding"],
     metrics: ["Viral-Ready Edit", "4K delivery", "Social edits"],
-    video: "https://kayabatt.b-cdn.net/Wed6cloud.mp4"
+    video: "https://KRIOSKA2.b-cdn.net/Wed8cloud.mp4"
+
   },
 
+  {
+    title: "Wedding Reels 4",
+    type: "Wedding",
+    discipline: "Wedding",
+    featured: false,
+    year: "2026",
+    result:
+      "Produced compelling wedding highlight films designed to evoke emotion and be shared",
+    description:
+      "Premium wedding reel production featuring smooth cuts, emotional pacing, color correction, and social-media-ready formatting for maximum engagement and reach.",
+    tags: ["Instagram", "Emotion", "Wedding"],
+    metrics: ["Viral-Ready Edit", "4K delivery", "Social edits"],
+    video: "https://KRIOSKA2.b-cdn.net/Wed9cloud.mp4"
+
+  },
 
 
 
@@ -381,7 +412,7 @@ export const mediaSamples = [
   {
     title: "Wedding Teaser & Highlights",
     category: "Color / Motion / Pacing",
-    src: "https://kayabatt.b-cdn.net/Wed1cloud.mp4",
+    src: "https://KRIOSKA2.b-cdn.net/Wed1cloud.mp4",
     poster: "",
     browserPlayable: true
   },
@@ -395,14 +426,14 @@ export const mediaSamples = [
   {
     title: "Sangeet Nights",
     category: "Hook / Captions / Energy",
-    src: "https://kayabatt.b-cdn.net/Sang1cloud1.mp4",
+    src: "https://KRIOSKA2.b-cdn.net/Sang1cloud1.mp4",
     poster: "",
     browserPlayable: true
   },
   {
     title: "Haldi Reels",
     category: "Story / Sound / Emotion",
-    src: "https://kayabatt.b-cdn.net/Hal2cloud.mp4",
+    src: "https://KRIOSKA2.b-cdn.net/Hal2cloud.mp4",
     poster: "",
     browserPlayable: true
   },
