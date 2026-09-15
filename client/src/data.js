@@ -229,8 +229,8 @@ export const projects = [
       "Created emotional and shareable wedding highlight reels.",
     description:
       "Premium wedding reel production featuring smooth cuts, emotional pacing, color correction, and social-media-ready formatting for maximum engagement and reach.",
-    tags: ["Instagram", "Emotion", "Wedding"],
-    metrics: ["Viral-Ready Edit", "4K delivery", "Social edits"],
+    tags: ["Cinematic Weddings", "Pure Emotions", "Timeless Moments"],
+    metrics: ["Viral-Ready Edit", "4K delivery", "Couple Stories"],
     video: "https://KRIOSKA2.b-cdn.net/Wed8cloud.mp4"
 
   },
@@ -245,8 +245,8 @@ export const projects = [
       "Produced compelling wedding highlight films designed to evoke emotion and be shared",
     description:
       "Premium wedding reel production featuring smooth cuts, emotional pacing, color correction, and social-media-ready formatting for maximum engagement and reach.",
-    tags: ["Instagram", "Emotion", "Wedding"],
-    metrics: ["Viral-Ready Edit", "4K delivery", "Social edits"],
+    tags: ["Wedding Celebrations", "Couple Stories", "Cinematic Storytelling"],
+    metrics: ["4K delivery", "Social edits","Viral-Ready Edit"],
     video: "https://KRIOSKA2.b-cdn.net/Wed9cloud.mp4"
 
   },
