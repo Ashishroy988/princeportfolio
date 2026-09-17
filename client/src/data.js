@@ -85,7 +85,7 @@ export const projects = [
       "A beautifully crafted wedding film combining emotional storytelling, elegant pacing, and cinematic visuals.",
     tags: ["Wedding", "Story", "Cinematic"],
     metrics: ["5 min film", "60 sec reel", "4K export"],
-    video: "https://KRIOSKA2.b-cdn.net/Wed7cloud.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Wed7cloud.mp4"
   },
 
   {
@@ -100,7 +100,7 @@ export const projects = [
       "A romantic short-form edit featuring cinematic transitions, music synchronization, and emotional moments.",
     tags: ["Engagement", "Teaser", "Reels"],
     metrics: ["45 sec teaser", "Vertical format", "Color graded"],
-    video: "https://kayabatt.b-cdn.net/Eng1cloud.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Eng1cloud.mp4"
   },
 
   {
@@ -145,7 +145,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://kayabatt.b-cdn.net/Reel6cloud.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Reel6cloud.mp4"
   },
 
 
@@ -164,7 +164,7 @@ export const projects = [
       "An upbeat edit with beat-synced cuts, dynamic pacing, and colorful visuals to capture the spirit of the event.",
     tags: ["Sangeet", "Energy", "Music"],
     metrics: ["60 sec reel", "Beat sync", "Social-ready"],
-    video: "https://kayabatt.b-cdn.net/Hal2cloud.mp4"
+    video: "https://KRIOSKA2.b-cdn.net/Sang2cloud.mp4"
   },
 
   
@@ -201,7 +201,7 @@ export const projects = [
       "Edited a wedding reel optimized for Instagram and YouTube Shorts, combining storytelling, sound design, motion effects, and cinematic visuals to highlight the celebration's most memorable moments.",
     tags: ["Short Form","Wedding", "Emotion", "Reels"],
     metrics: ["Social edits", "4K delivery", "High Engagement"],
-    video: "https://KRIOSKA2.b-cdn.net/Wed5cloud.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Wed5cloud.mp4"
   },
 
    {
@@ -216,7 +216,7 @@ export const projects = [
       "Premium wedding reel production featuring smooth cuts, emotional pacing, color correction, and social-media-ready formatting for maximum engagement and reach.",
     tags: ["Instagram", "Emotion", "Wedding"],
     metrics: ["Viral-Ready Edit", "4K delivery", "Social edits"],
-    video: "https://KRIOSKA2.b-cdn.net/Wed6cloud.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Wed6cloud.mp4"
 
   },
    {
@@ -231,7 +231,7 @@ export const projects = [
       "Premium wedding reel production featuring smooth cuts, emotional pacing, color correction, and social-media-ready formatting for maximum engagement and reach.",
     tags: ["Cinematic Weddings", "Pure Emotions", "Timeless Moments"],
     metrics: ["Viral-Ready Edit", "4K delivery", "Couple Stories"],
-    video: "https://KRIOSKA2.b-cdn.net/Wed8cloud.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Wed8cloud.mp4"
 
   },
 
@@ -247,7 +247,7 @@ export const projects = [
       "Premium wedding reel production featuring smooth cuts, emotional pacing, color correction, and social-media-ready formatting for maximum engagement and reach.",
     tags: ["Wedding Celebrations", "Couple Stories", "Cinematic Storytelling"],
     metrics: ["4K delivery", "Social edits","Viral-Ready Edit"],
-    video: "https://KRIOSKA2.b-cdn.net/Wed9cloud.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Wed9cloud.mp4"
 
   },
 
@@ -268,7 +268,7 @@ export const projects = [
       "A romantic short-form edit featuring cinematic transitions, music synchronization, and emotional moments.",
     tags: ["Engagement", "Teaser", "Reels"],
     metrics: ["45 sec teaser", "Vertical format", "Color graded"],
-    video: "https://kayabatt.b-cdn.net/Eng3cloud.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Eng3cloud.mp4"
   },
 
   {
@@ -283,7 +283,7 @@ export const projects = [
       "A romantic short-form edit featuring cinematic transitions, music synchronization, and emotional moments.",
     tags: ["Engagement", "Teaser", "Reels"],
     metrics: ["45 sec teaser", "Vertical format", "Color graded"],
-    video: "https://kayabatt.b-cdn.net/Eng4cloud.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Eng4cloud.mp4"
   },
 
   {
@@ -298,7 +298,7 @@ export const projects = [
       "A romantic short-form edit featuring cinematic transitions, music synchronization, and emotional moments.",
     tags: ["Engagement", "Teaser", "Reels"],
     metrics: ["45 sec teaser", "Vertical format", "Color graded"],
-    video: "https://kayabatt.b-cdn.net/Eng5cloud.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Eng5cloud.mp4"
   },
 
 
@@ -319,7 +319,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://kayabatt.b-cdn.net/Reel5cloud.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Reel5cloud.mp4"
   },
 
   {
@@ -334,7 +334,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://kayabatt.b-cdn.net/Reel4cloud.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Reel4cloud.mp4"
   },
 
 
@@ -350,7 +350,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://kayabatt.b-cdn.net/Reel1cloud.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Reel1cloud.mp4"
   },
 
   {
@@ -365,7 +365,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://kayabatt.b-cdn.net/Reel2cloud.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Reel2cloud.mp4"
   },
 
   {
@@ -380,7 +380,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://kayabatt.b-cdn.net/Reel7cloud.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Reel7cloud.mp4"
   },
 
 
@@ -396,7 +396,7 @@ export const projects = [
       "Vertical reels featuring creative transitions, trending audio, and captivating storytelling.",
     tags: ["Reels", "Instagram", "Vertical"],
     metrics: ["30 sec reel", "9:16 format", "Fast delivery"],
-    video: "https://kayabatt.b-cdn.net/Reel8cloud.mp4"
+    video: "https://sonuportfolio.b-cdn.net/Reel8cloud.mp4"
   },
 
 
@@ -412,14 +412,14 @@ export const mediaSamples = [
   {
     title: "Wedding Teaser & Highlights",
     category: "Color / Motion / Pacing",
-    src: "https://KRIOSKA2.b-cdn.net/Wed1cloud.mp4",
+    src: "https://sonuportfolio.b-cdn.net/Wed1cloud.mp4",
     poster: "",
     browserPlayable: true
   },
   {
     title: "Engagement Teaser & Highlights",
     category: "Vertical / Beat Sync",
-    src: "https://kayabatt.b-cdn.net/Eng1cloud.mp4",
+    src: "https://sonuportfolio.b-cdn.net/Eng1cloud.mp4",
     poster: "",
     browserPlayable: true
   },
@@ -440,7 +440,7 @@ export const mediaSamples = [
   {
     title: "Insta Reels",
     category: "Cinematography / Grade",
-    src: "https://kayabatt.b-cdn.net/Reel6cloud.mp4",
+    src: "https://sonuportfolio.b-cdn.net/Reel6cloud.mp4",
     poster: "",
     browserPlayable: true
   }
