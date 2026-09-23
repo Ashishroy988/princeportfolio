@@ -21,6 +21,16 @@
   <body>
     <div id="root"></div>
     <noscript>Please enable JavaScript to view this portfolio.</noscript>
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- Temporary deployment switch: localhost keeps the existing portfolio entry unchanged. -->
+    <script type="module">
+      const hostname = window.location.hostname;
+      const isLocalhost = hostname === "localhost" || hostname === "127.0.0.1" || hostname === "[::1]";
+
+      if (isLocalhost) {
+        import("/src/main.jsx");
+      } else {
+        import("/src/ProductionLanding.jsx");
+      }
+    </script>
   </body>
 </html>
